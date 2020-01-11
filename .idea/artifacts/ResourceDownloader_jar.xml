@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ResourceDownloader:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ResourceDownloader_jar</output-path>
+    <root id="archive" name="ResourceDownloader.jar">
+      <element id="module-output" name="ResourceDownloader" />
+    </root>
+  </artifact>
+</component>

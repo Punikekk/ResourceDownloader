@@ -1,0 +1,4 @@
+lib/*
+*.iml
+out/*
+/KekkaPlugin.jar
