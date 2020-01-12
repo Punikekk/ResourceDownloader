@@ -17,12 +17,8 @@ public class FileCollection {
     @XmlElements(@XmlElement(name = "file"))
     List<File> files;
 
-    @Override
-    public String toString() {
-        return "FileCollection{" +
-                "locations=" + locations +
-                ", files=" + files +
-                '}';
+    public boolean areLocationsEmpty() {
+        return locations == null || locations.isEmpty();
     }
 
     static class Location {
@@ -65,16 +61,6 @@ public class FileCollection {
 
         public String getFileName() {
             return name + '.' + type;
-        }
-
-        @Override
-        public String toString() {
-            return "File{" +
-                    "hash='" + hash + '\'' +
-                    ", location='" + location + '\'' +
-                    ", name='" + name + '\'' +
-                    ", type='" + type + '\'' +
-                    '}';
         }
     }
 }
